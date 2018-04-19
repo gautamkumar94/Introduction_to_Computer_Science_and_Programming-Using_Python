@@ -1,0 +1,71 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr 18 21:51:19 2018
+
+@author: gautam
+"""
+
+x = 5
+ans = 0
+iterationsLeft = x
+while(iterationsLeft !=0):
+    iterationsLeft = iterationsLeft-1
+    ans = ans+x
+    print(str(x) + '*'+str(x) +' = '+str(ans))
+    
+print(str(x) + '*'+str(x) +' = '+str(ans))
+
+num = 10
+for num in range(5):
+    print(num)
+print(num)
+
+divisor = 2
+for num in range(0, 10, 2):
+    print(num/divisor) 
+    
+print("********************************************")
+for variable in range(20):
+    if variable % 4 == 0:
+        print(variable)
+    if variable % 16 == 0:
+        print('Foo!') 
+        
+print("********************************************")
+        
+for letter in 'hola':
+    print(letter) 
+print("********************************************")
+    
+count = 0
+for letter in 'Snow!':
+    print('Letter # ' + str(count) + ' is ' + str(letter))
+    count += 1
+    break
+print(count)
+print("********************************************")
+
+
+num = 10
+for num in range(5):
+    print(num)
+print(num)
+print("********************************************")
+
+
+school = 'Massachusetts Institute of Technology'
+numVowels = 0
+numCons = 0
+
+for char in school:
+    if char == 'a' or char == 'e' or char == 'i' \
+       or char == 'o' or char == 'u':
+        numVowels += 1
+    elif char == 'o' or char == 'M':
+        print(char)
+    else:
+        numCons -= 1
+
+print('numVowels is: ' + str(numVowels))
+print('numCons is: ' + str(numCons)) 

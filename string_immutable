@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr 24 07:50:13 2018
+
+@author: gautam
+"""
+
+s ="hello"
+print(s)
+print(s[0])
+#s[0]=1   /we cant change the value of strings
+s = "y" + s[0:len(s)]
+print(s)
+
+
+# LOOP IN STRING
+
+s = "abcdefgh"
+for index in range(len(s)):
+    if s[index]=='i' or s[index] == 'o':
+        print("there is an i or u")
+    print("string at doesnot contain i or u" )
+    
+for char in s:
+    if char =='i'or char == 'u':
+        print("there is an i or u")
+        
+        
+        
+a_letter = "aefhilmnorsxAEFHILMNORSX"
+word = input("i will cheer for you give me a word:")
+times = int(input("enthusiasm leve (1-10):"))
+i =0
+
+while(i < len(word)):
+    char = word[i]
+    if char in a_letter:
+        print("give me an " +char + "!" +char)
+    else:
+        print("give me a "+char +" ! " + char)
+    i+=1
+    
+print("what does that spell")
+for i in range(times):
+    print(word, "!!!")
+    
+    
+    
+
+    

@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  2 21:30:18 2018
+
+@author: gautam
+"""
+
+input_string = input("enter a string:")
+reverse =''
+for s in range (len(input_string)-1, -1, -1):
+    reverse +=input_string[s]
+print (reverse)
+
+print(input_string[::-1])
+
+
+"""
+to split the sentance into word
+"""
+
+split_word = input_string.split()
+print(split_word)
+
+"""
+To reverse the word of sentance
+"""
+reverse_word=[]
+
+
+    

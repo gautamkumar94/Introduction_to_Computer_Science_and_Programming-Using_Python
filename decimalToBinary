@@ -6,12 +6,8 @@ Created on Wed Apr 25 09:14:25 2018
 @author: gautam
 """
 
-num = 7
-if (num < 0):
-    isNeg = True
-    num = abs(num)
-else:
-    isNeg= False
+num = 11
+
 
 result = ''
 
@@ -21,9 +17,7 @@ if num == 0:
 while (num > 0):
     result = str(num%2)+result
     num = num//2
-if(isNeg):
-    result = '-'+result
-    
+ 
 print(result)
     
     

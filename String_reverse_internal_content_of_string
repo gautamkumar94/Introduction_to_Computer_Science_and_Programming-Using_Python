@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  2 22:56:55 2018
+
+@author: gautam
+"""
+
+s = input("enter some String:")
+
+#now brek the sentance into the words 
+l = s.split()
+
+l1=[]
+
+for i in range (len(l)):
+    s1 = l[i]
+    l1.append(s1[::-1])
+    
+print(l1)
+
+"""
+other method 
+"""
+for x in l:
+    l1.append(x[::-1])
+    
+output = ''.join(l1)
+
+"""
+character at odd and even place 
+"""
+
+print("character at even places are : ",s[0::2])
+print("character at odd places are : ", s[1::2])
+
+"""
+odd n even spliting without using : operator
+"""
+
+a=0
+print("character at even position : ")
+while a<len(s):
+    print(s[a])
+    a+2
+    
+print("character at odd position")
+a=1
+while a<len(s):
+    print(s[i])
+    a+2
+    
+    
+
+

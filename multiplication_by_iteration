@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Apr 29 09:00:53 2018
+
+@author: gautam
+"""
+
+#we can solve multiplication easily but here we solver it by adition
+
+def mul_iter(a,b):
+    result =0
+    while(b>0):
+        result +=a
+        b -=1
+    return result
+
+
+
+
+# other way = a*b = a +a(b-1)
+#=a+a+a(b-2)
+    
+
+def mul(a,b):
+    result = 0
+    if b==1:
+        result +=a
+        return result
+    else:
+        return a+mul(a, b-1)
+    
+def fact(n):
+    if n==0:
+        return 1
+    elif n==1:
+        return n
+    else:
+        return n*fact(n-1)
+    

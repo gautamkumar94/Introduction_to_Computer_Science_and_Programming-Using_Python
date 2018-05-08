@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue May  1 02:28:26 2018
+
+@author: gautam
+"""
+
+def fib(x):
+    if(x==0 or x==1):
+        return 1
+    else:
+        return fib(x-1) + fib(x-2)
